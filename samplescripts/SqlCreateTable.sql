@@ -1,3 +1,7 @@
+-- noinspection SqlDialectInspectionForFile
+
+-- noinspection SqlNoDataSourceInspectionForFile
+
 create database student;
 
 create table if not exists student.student_details
@@ -17,3 +21,6 @@ create table if not exists student.student_details
     StudentId int auto_increment
     primary key
     );
+
+
+describe student_details;
