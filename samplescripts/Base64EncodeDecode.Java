@@ -1,0 +1,25 @@
+import java.nio.charset.StandardCharsets;
+import java.util.Base64;
+
+public class Base64EncodeDecode {
+
+    public static void main(String args[]){
+
+        String encodedMessagefromSource ="PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLT==";
+        String decodedMessage=decodeBase64(encodedMessagefromPulse);
+        // System.out.println("decodedMessage.... "+decodedMessage);
+        //encoding again here
+        String xml="";
+        //encode the XML
+        String encodedXml=encodeBase64(xml);
+        System.out.println("encodedXml.... "+encodedXml);
+    }
+    public static String decodeBase64(String base64EncodedXML) {
+        byte[] decodedValue = Base64.getDecoder().decode(base64EncodedXML);
+        return new String(decodedValue, StandardCharsets.UTF_8);
+    }
+    public static String encodeBase64(String xml) {
+        String encodedValue = Base64.getEncoder().encodeToString(xml.getBytes());
+        return encodedValue;
+    }
+}
