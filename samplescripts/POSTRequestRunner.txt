@@ -1,0 +1,19 @@
+curl --location 'http://localhost:8191/v1/mis/newstudents' \
+--header 'Content-Type: application/json' \
+--data '[
+{
+"id": {{id}},
+"firstName": "{{firstName}}",
+"lastName": "{{lastName}}",
+"gender": "{{gender}}",
+"age": "{{age}}",
+"email": "{{email}}",
+"contactNumber": "{{contactNumber}}",
+"addressLine1": "{{addressLine1}}",
+"addressLine2": "{{addressLine2}}",
+"addressLine3": "{{addressLine3}}",
+"state": "{{state}}",
+"zipCode": "{{zipCode}}",
+"course": "{{course}}"
+}
+]'
