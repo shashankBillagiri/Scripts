@@ -5,7 +5,7 @@ from mysql.connector import errorcode
 
 try:
     cnx = mysql.connector.connect(user='devuser',
-                                  password = '',
+                                  password = 'Shashi.123@',
                                   database='student')
 except mysql.connector.Error as err:
     if err.errno == errorcode.ER_ACCESS_DENIED_ERROR:
